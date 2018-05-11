@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BioInformatics_Patterns01"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="BioInformatics Decimal &lt;-&gt; DNA" Height="311.619" Width="273.695">
+    <Grid Margin="0,0,2,1">
+        <Button Content="Exit" HorizontalAlignment="Left" Height="29" Margin="10,198,0,0" VerticalAlignment="Top" Width="71" Click="Button_Exit"/>
+        <Label Content="Decimal:" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="58" RenderTransformOrigin="-0.315,0.421"/>
+        <Label Content="Length:" HorizontalAlignment="Left" Height="25" Margin="10,51,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.504,1.487"/>
+        <Label Content="DNA:" HorizontalAlignment="Left" Height="25" Margin="10,94,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.522,2.59"/>
+        <TextBox x:Name="txtDecimal" HorizontalAlignment="Left" Height="21" Margin="73,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="txtLength" HorizontalAlignment="Left" Height="21" Margin="73,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="txtDNA" HorizontalAlignment="Left" Height="21" Margin="73,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <Button Content="Decimal -&gt; DNA" HorizontalAlignment="Left" Height="29" Margin="10,144,0,0" VerticalAlignment="Top" Width="100" Click="Button_DecimalToDna"/>
+        <Button Content="DNA -&gt; Decimal" HorizontalAlignment="Left" Height="29" Margin="123,144,0,0" VerticalAlignment="Top" Width="100" Click="Button_DnaToDecimal"/>
+        <Label Content="Status:" HorizontalAlignment="Left" Height="25" Margin="10,245,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.522,2.59"/>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Height="21" Margin="73,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+
     </Grid>
 </Window>
